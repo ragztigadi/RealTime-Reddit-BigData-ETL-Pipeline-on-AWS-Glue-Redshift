@@ -3,8 +3,6 @@ venv/
 .env/
 __pycache__/
 
-# Ignore Airflow logs
-logs/
 
 # Ignore compiled files
 *.pyc
@@ -12,6 +10,3 @@ logs/
 *.pyd
 *.db
 
-# Ignore OS-specific stuff
-.DS_Store
-Thumbs.db
