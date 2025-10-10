@@ -1,0 +1,7 @@
+/dags
+/data
+/etls
+/pipelines
+/plugins
+/tests
+/utils
