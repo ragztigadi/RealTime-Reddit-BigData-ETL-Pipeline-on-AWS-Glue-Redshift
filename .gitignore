@@ -12,3 +12,4 @@ logs/
 *.pyd
 *.db
 
+config/
