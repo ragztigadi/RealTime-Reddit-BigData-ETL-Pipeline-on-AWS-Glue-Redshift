@@ -5,6 +5,10 @@ The goal is to extract data from Reddit’s API, process it, and build a scalabl
 
 ---
 
+# System Architecture 
+
+![alt text](System_Architecutre.png)
+
 ## 📁 Current Progress
 
 * ✅ Airflow environment configured using **Docker + Docker Compose**
