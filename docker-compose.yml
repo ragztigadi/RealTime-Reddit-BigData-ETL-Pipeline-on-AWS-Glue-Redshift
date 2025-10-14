@@ -57,3 +57,4 @@ services:
   airflow-worker:
     <<: *airflow-common
     command: celery worker
+  

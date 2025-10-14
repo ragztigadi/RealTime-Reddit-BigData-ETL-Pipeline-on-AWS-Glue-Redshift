@@ -4,19 +4,22 @@ from datetime import datetime
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from pipelines.reddit_pipeline import reddit_pipeline
+
+
 
 default_args ={
     'owner' : 'codewithRaghav',
     'start_date' : datetime(2025,10,10),
 }
 
-file_postfix = datetime.now().strtime("%Y%m%d")
+file_postfix = datetime.now().strftime("%Y%m%d")
 
 dag = DAG(
     dag_id = 'etl_reddit_pipeline',
-    default_args='default_args',
+    default_args=default_args,
     schedule_interval = '@daily',
     catchup=False,
     tags= ['reddit', 'etl', 'pipeline']  # optional
@@ -33,6 +36,7 @@ extract = PythonOperator(
         'time_filter':'day',
         'limits':100 
 
-    }
+    },
+    dag=dag
 
 )
