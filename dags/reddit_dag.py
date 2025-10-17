@@ -38,5 +38,12 @@ extract = PythonOperator(
 
     },
     dag=dag
+)
 
+# Upload to AWS S3 Bucket
+
+upload_s3 = PythonOperator(
+    task_id='s3_upload',
+    python_callable=upload_s3_pipeline,
+    dag=dag
 )
