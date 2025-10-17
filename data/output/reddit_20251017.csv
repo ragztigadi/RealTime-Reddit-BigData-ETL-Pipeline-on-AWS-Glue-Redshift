@@ -1,0 +1,371 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1o81ydc,Hard to swallow.....,,2963,107,growth_man,2025-10-16 09:52:18,https://i.redd.it/edggfctg4gvf1.png,False,False,False,False
+1o80e49,Accidentally Data Engineer,"I'm the lead software engineer and architect at a very small startup, and have also thrown my hat into the ring to build business intelligence reports.
+
+The platform is 100% AWS, so my  approach was AWS Glue to S3 and finally Quicksight. 
+
+We're at the point of scaling up, and I'm keen to understand where my current approach is going to fail.
+
+Should I continue on the current path or look into more specialized tools and workflows?
+
+Cost is a factor, ao I can't just tell my boss I want to migrate the whole thing to Databricks.. I also don't have any specific data engineering experience, but have good SQL and general programming skills",70,37,CzackNorys,2025-10-16 08:09:22,https://www.reddit.com/r/dataengineering/comments/1o80e49/accidentally_data_engineer/,False,False,False,False
+1o85dti,Was misled into a data analyst role and reluctantly stayed due to lack of options. The projects I worked on helped me indirectly discover the company's salaries. Not sure if it’s better to apply internally or leave knowing this info?,"About a year ago, I got a job as a software engineer at a major global tech company. The job description was listed as a software engineer involved with DevOps tools like AWS, Terraform, Docker, and scripting. The process felt standard for tech roles, similar to companies like Amazon, but involved 2 hiring managers present in each meeting, which I thought was unusual. It was my first full-time corporate position too, and after facing a one-year gap post-graduation, I thought beggars can’t be choosers.
+
+A few days after starting, however, I was informed that I’d actually be working under the other hiring manager. The original manager, who conducted most of my application process, didn’t need anyone on his team; instead, my actual manager (the other hiring manager) was the one who needed me. They had posted the job under the original manager’s name because it was tied to his cost center, which had lower salary brackets and more resources for vacancies. I found this out on my own later down the line.
+
+Initially, I didn’t think much of it and decided to see how things played out. At first, I was coding and doing cloud-related tasks. However, after six months, I realized my work was far from what was advertised as approximately 70% of my tasks involved Power Automate, Power BI, and Power Apps, with only 30% on actual dev and cloud work. Given they knew my goals and cloud-centric skills, I felt scammed.
+
+As I came to terms with this, I pretty much lost motivation to learn Power Platform, often utilizing AI for most tasks. What was advertised as a software engineering role turned out to be more of a data analyst position working with upper management. Despite the lack of effort on my part, I still managed to meet deadlines, and my work received recognition, even leading to bonuses and a salary bump eight months in.
+
+Anyways, I’m now 1 year into this job. You might wonder why I’ve stayed till now? Honestly, the role is quite easy. I work remotely and don’t need to exert much brain power on my projects as most require basic research because the company lags behind in current practices. Another big reason I've stuck around is the ability to apply for jobs abroad after staying 1.5 years with the company. 
+
+More importantly, however, is that I also unexpectedly hit the “jackpot” in one of my recent projects, where I was provided access to payroll data. By combining projects I worked on, I can indirectly figure out the highest-paying roles and the best countries, offices, and teams to work in. I discovered that my manager earns ten times my salary, with his N+1 earning three times as much and N+2 earning five times as much, respectively. I discovered my country consistently offers the shittiest salaries too, and that I need to get out of here if I ever have the chance.
+
+As a result, I plan to apply internally to the best jobs in my company based on the salary knowledge I’ve now acquired. Since I’m coasting most of the day at my current job, I had initially decided to sharpen my cloud and system design skills and also focus on LeetCode. But I’ve been thinking that, since a lot of my actual work experience over the past year has been data-centric, I could combine that with my previous cloud and DevOps skills to pursue a Data Engineering role, at least marketing myself as such. I believe my current experience + newly acquired skills would give me a better chance of success in applying for data engineering roles rather than purely DevOps ones. 
+
+However, my main concern is needing to learn many more technologies in six months. Thus, my question is, which path is more realistic for my career? Is Data Engineering as future-proof as full-scale infrastructure/system design? 
+
+And more importantly, to those with years in the field, what is the smartest career path moving forward?",14,4,NigoDuppy,2025-10-16 12:54:48,https://www.reddit.com/r/dataengineering/comments/1o85dti/was_misled_into_a_data_analyst_role_and/,False,False,False,False
+1o8qpoe,How to land a new grad DE role? What am I doing wrong?,"I have been applying for mostly new grad DE roles that requires <1 or 1 year of experience, and even after 100+ applications no call backs.. I believe I have enough DE experience for some entry level role; however, it's just been radio silence. :(    ",14,6,DAREDEVILx616,2025-10-17 03:26:52,https://i.redd.it/wuuyadf5clvf1.png,False,False,False,False
+1o7xl3r,Data Engineering Playbook for a leader.,"I have been in software leadership positions - VP at Small to medium company, and Director at a large company for last few years and have managed mostly web/mobile related projects and have a very strong hands on experience with architecture and coding in the same. During the time, I have also led some analytics teams which had reporting frameworks and most recently GenAI related projects. Have a good understanding of GenAI LLM integrations. I have basic understanding of models and model architecture but have a good handle on with the recent LLM integration/workflow frameworks like Langchain, Langtrace etc. 
+
+Currently, while looking for a change, I am seeing much more demand in Data which makes total sense to me with the direction industry is heading. I am wondering how should i get myself more framed as a Data engineering leader than the generic engineering leader role. I have done some LinkedIn basic trainings but seems like i will need a little more indepth knowledge as my past hands on experience has been in Java, nodejs and cloud native architectures. 
+
+Do you folks have any recommendation on how should i get up to speed, is there a databricks or snowflake level certification which i go for to understand the basic concepts. I don't care whether i clear the exam or not but learning is going to be a key to me.",14,6,logical-dreamer,2025-10-16 05:09:12,https://www.reddit.com/r/dataengineering/comments/1o7xl3r/data_engineering_playbook_for_a_leader/,False,False,False,False
+1o8j9ct,Code‑first Postgres→ClickHouse CDC with Debezium + Redpanda + MooseStack (demo + write‑up),"We put together a demo + guide for a code‑first, local-first CDC pipeline to ClickHouse using Debezium, Redpanda, and MooseStack as the dx/glue layer.   
+  
+What the demo shows:
+
+* Spin up ClickHouse, Postgres, Debeizum, and Redpanda locally in a single command
+* Pull Debezium managed Redpanda topics directly into code
+* Add stateless streaming transformations on the CDC payloads via Kafka consumer
+* Define/manage ClickHouse tables in code and use them as the sink for the CDC stream
+
+Blog: [https://www.fiveonefour.com/blog/cdc-postgres-to-clickhouse-debezium-drizzle](https://www.fiveonefour.com/blog/cdc-postgres-to-clickhouse-debezium-drizzle) • Repo:[ https://github.com/514-labs/debezium-cdc](https://github.com/514-labs/debezium-cdc)
+
+*(Disclosure: we work on MooseStack. ClickPipes is great for managed—this is the code‑first path.)*    
+
+
+Right now the demo solely focuses on the local dev experience, looking for input from this community on best practices for running Debezium in production (operational patterns, scaling, schema evolution, failure recovery, etc.).",9,0,Ok_Mouse_235,2025-10-16 21:45:16,https://github.com/514-labs/debezium-cdc,False,False,False,False
+1o87r49,Data Vendors Consolidation Speculation Thread,"With Fivetrans getting dbt and Tobiko under it's belt, is there any other consolidation you'd guess is coming sooner or later?",6,6,AMDataLake,2025-10-16 14:32:19,https://www.reddit.com/r/dataengineering/comments/1o87r49/data_vendors_consolidation_speculation_thread/,False,False,False,False
+1o8d1i4,What’s your motivation ?,"Unless data is a top priority from your top management which means there will multiple teams having data folks - anayst, engineer, mle, data scientists etc
+Or, you are tech company which is truly data driven what’s the point of working in data in small teams and companies where it is not the focus?
+Coz no one’s looking at the dashboards being built, data pipelines optimized or even the business questions being answered using data. 
+It is my assumption but 80% of people working in data fall in the category where data is not a focus, it is a small team or some exec wanted to grow his team hence hired a data team.
+How do you keep yourself motivated if no one uses what you build?
+I feel like a pivot to either SWE or a business role would make more sense as you are creating something that has utility in most companies.
+
+P.S : Frustrated small team DE",5,3,cyamnihc,2025-10-16 17:48:31,https://www.reddit.com/r/dataengineering/comments/1o8d1i4/whats_your_motivation/,False,False,False,False
+1o8nwww,Master's? Second bachelor's?Boot camp? edX/Coursera/Udemy/etc?,"I have read a lot of posts in this sub about training for data engineering. My situation is a little different. 
+
+I have 20+ years of experience almost entirely with Linux. My early years were primarily Solaris but somewhere along the way I got sucked into Linux. In 2020, I lost my job and a few weeks later suffered a freak accident that left me with long term issues that made it impossible to work. About a year ago, I finally felt ok to go back to work, but I suffered a freak injury and now I need a hip replacement. Once again definitely can't work and my surgery is delayed because some other stuff has to be done first. 
+
+I want to go back to work so badly, but I want to pivot into something I haven't done yet. I looked into ai/ml and data analytics, but data engineering sounds like something that I would enjoy doing. Data analytics sounds very interesting as well. I'm contemplating learning both. I know they're very different but that's sorta why I like them both. 
+
+So what's the best way to do that? What's the best path from senior engineer with skills that are already five years old to serious skills in data engineering/analytics and legitimately hireable? I've been kicking this around for a while but I could use some help focusing on the path that is going to be the most useful. There's so many freaking options that my brain is glitching. 
+
+Thanks!
+I'm older than System V, please excuse any typos or misunderstandings or old words.
+
+",4,4,kgva,2025-10-17 01:11:39,https://www.reddit.com/r/dataengineering/comments/1o8nwww/masters_second_bachelorsboot_camp/,False,False,False,False
+1o857sq,How to implement text annotation and collaborative text editing at the same time?,"General problem I'm been considering in the back of my head, when trying to figure out how to make some sort of interactive web UI for various language texts, and allow text annotation, and text editing (to progressively/slowly clean up the text mistakes over time, etc.). But in a way such a way that, if you or someone edits the text down the road, it won't mess up the annotations and stuff like that?
+
+I don't know much about linguistic annotation software (saw [this brief overview of some options](https://www.labellerr.com/blog/text-annotation-labeling-tools/#1-labellerr)), but what I've looked at so far are basically these:
+
+- [Perseus Greek Texts](https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.01.0227) (click on individual words to lookup)
+- [Prodigy demo](https://demo.prodi.gy/?=null&view_id=pos_manual) (on of the text annotation tools I could quickly try in basic mode for free)
+- [Logeion](https://logeion.uchicago.edu/articulus) (double click to visit terms anywhere in the text)
+
+But the general problem I'm getting stuck on in my head is what I was saying, here is a brief example to clarify:
+
+- Say we are working with the Bible text (bunch of books, divided into chapters, divided into verses)
+- The data model I'm considering at this point is a tree of JSON basically, `text_section` can be arbitrarily nested (bible -> book -> chapter), and then at the end are `text_span` in the children (verses here).
+- Say the Bible unicode text is super messy, random artifacts here and there, extra whitespace and punctuation in various spots, overall the text is 90% good quality but could use months or years of fine-tuned polish to clean it up and make it perfect. (Sefaria texts, open-source Hebrew texts, are super-super messy, tons of textual artifacts that could use some love to clean up and stuff eventually over time... for example.).
+- But say you can also annotate the text at any point, creating probably ""selection_ranges"" of text within or across verses, etc.. Then you can label or do whatever to add metadata to those ranges.
+
+Problem is:
+
+- Text is being cleaned up over say a couple years, a few minor tweaks every day.
+- Annotations are being added every day too.
+
+Edge-case is basically this:
+
+- Annotation is added on some selected text
+- Text gets edited (maybe user is not even aware of or focused on the annotation UI at this point, but under the hood the metadata is still there).
+- Editor removes some extra whitespace, and adds a missing word (as they found say by looking at a real manuscript scan).
+- Say the editor added `Newton` to `Isaac`, so whereas before it said `foo    bar <thing>Isaac</thing> ...   baz`, now it says `foo bar <thing>Isaac</thing> Newton baz`.
+- Now the annotation sort of changes meaning, and needs to be redone (this is a terrible example, I tried thinking of what my mind's stumbling on, but can't quite pin it down totally yet).
+- Should say `foo bar <thing>Isaac Newton</thing> baz` let's say (but the editor never sees anything annotation-wise...)
+
+Basically, trying to show that, the annotations can get messed up, and I don't see a systematic way to handle or resolve that if editing the text is also allowed.
+
+You can imagine other cases where some annotation marks like a phrase or idiom, but then the editor comes and changes the idiom to be something totally different, or just partially different, whatever. Or splits the annotation somehow, etc..
+
+Basically, have apps or anyone figured out generally how to handle this general problem? How to not make it so when you edit, you have to just delete the annotations, but it somehow smart merges, or flags it for double-checking, etc.. Basically there is a lot to think through functionality-wise, and I'm not sure if it's already been done before. It's both a data-modeling problem, and a UI/UX problem. But mainly concerned about the technical data-modeling problem here.",4,0,lancejpollard,2025-10-16 12:47:18,https://www.reddit.com/r/dataengineering/comments/1o857sq/how_to_implement_text_annotation_and/,False,False,False,False
+1o8luf7,Using modal for transformation of a huge dataset,"Hi!
+
+Assume I got a huge dataset of crawled internet webpages, and I'd like to transform them page by page doing some kind of filtration, pre-processing, tokenization etc. Let's say that original dataset is stored along some metainformation in form of parquet files in S3.
+
+Coming from enterprises, I have some background in Apache ecosystem as well as some older Big Tech MapReduce-kinda data warehouses, so my first idea was to use Spark to define those transformations using some scala/python code and just deal with it in batch processing manner. But before doing it ""classic ETL-style"" way, I decided to check some more modern (trending?) data stacks that are out there.
+
+I learned about Modal. They seem to be claiming about revolutionizing data processing, but I am not sure how exactly the practical usecases of data processing are expressed in them. Therefore, a bunch of questions to the community:
+
+1. They don't provide a notion of ""dataframes"", nor know anything about my input datasets, thus I must be responsible for somehow partitioning of the input into chunks, right? Like, reading slices of parquet file if needed, or coalescing groups of parquet files together before running an actual distributed computation?
+
+2. What about fault-tolerance? Spark has implemented protocols for atomic output commit, how do you expose result of a distributed data processing atomically without producing garbage from restarted jobs when using Modal? Do I, again, implement this manually?
+
+3. Is there any kind of long-running data processing operation state snapshotting? (not saying about individual executors, but rather the application master) If I have a CPU intensive computation running for 24 hours and I close my laptop lid, or the initiator host dies some other way, am I automatically screwed?
+
+4. Are there tweaks like speculative execution, or at least a way how to control/abort individual function executions? It is always a pity to see how 99% of a job finished with high concurrency and last couple of tasks ended up on some faulty host and take eternity to finish. 
+
+5. Since they are a cloud service - do you know about their actual scalability limits? I have a computation CPU cluster of \~25k CPU cores in my company, do they have some comparable fleet? It would be quite stupid to hit into some limitation like ""no more than 1000 cpu cores per user unless you are an enterprise folk paying $20k/month just for a license""... 
+
+6. Also, them being non-opensource also makes it harder to understand what exactly happens under the hood, are there any open-source competitors to them? Or at least a way how to bring them on-premise to my company's fleet?
+
+And a more generic question – has any of you folks ever tried actually processing some huge datasets with them? Right now it looks more like a tool for smaller developer experiments, or for time-slicing GPUs for seconds, but not something that I would use to build a reliable data pipeline over. But maybe I am missing something. 
+
+PS I was told Ray also became popular recently, and they seem to be open-source as well, so will check them later as well.",3,2,Remote_Impact_8173,2025-10-16 23:35:08,https://www.reddit.com/r/dataengineering/comments/1o8luf7/using_modal_for_transformation_of_a_huge_dataset/,False,False,False,False
+1o88ocz,How do you build anomaly alerts for real business metrics with lots of slices?,"Hey folks! I’m curious how teams actually build anomaly alerting for business metrics when there are many slices (e.g., country \* prime entity \* device type \* app version).
+
+What I’m exploring:  
+MAD/robust Z, STL/MSTL, Prophet/ETS, rolling windows, adaptive thresholds, alert grouping.
+
+One thing I keep running into: the more “advanced” the detector, the more false positives I get in practice. Ironically, a simple 3-sigma rule often ends up the most stable for us. If you’ve been here too - what actually reduced noise without missing real incidents?",2,1,Civil-Bee-f,2025-10-16 15:07:44,https://www.reddit.com/r/dataengineering/comments/1o88ocz/how_do_you_build_anomaly_alerts_for_real_business/,False,False,False,False
+1o8qtsx,How am i supposed to set up an environment with Airflow and Spark?,"I have been trying to set up Airflow and Spark with Docker. Apparently, the easiest way would usually be to use the Bitnami Spark image. However, this image is no longer freely available, and I can't find any information online on how to properly set up Spark using the regular Spark image. Anyone have any idea on how to make it work with Airflow?",1,0,goreshiet,2025-10-17 03:32:53,https://www.reddit.com/r/dataengineering/comments/1o8qtsx/how_am_i_supposed_to_set_up_an_environment_with/,False,False,False,False
+1o8ejxi,Practical Guide to Semantic Layers: Your MCP-Powered AI Analyst (Part 2),,1,0,OkraCommercial3138,2025-10-16 18:44:02,https://open.substack.com/pub/rasmusengelbrecht/p/practical-guide-to-semantic-layers-34d?r=1gpztg&utm_medium=ios,False,False,False,False
+1o8apr1,How would you handle nwp data and customer data both time series with different frequencies for a data warehouse?,"So the idea is that we get weather data with reference time and forecast time with a frequency of 6 hours and customer data with a frequency of 15 minutes. Consider also that there 5 weather data sources and many customers i.e. 100.
+There are some options I have thought of:
+1. Storing as parquet files in gcs in a hive structure bucket/customer_id/source/year/month/day/hour. With duckDB on top to query these files.
+2. Postgres with a single table hash partiotioned by customer id with fields: reference time, forecast time, customer id, nwp source, features as JSON.
+Having difficulties in wrapping up my head over the pros and cons of these options. Any suggestions would be helpful.",1,0,Ok_Garbage_2884,2025-10-16 16:24:03,https://www.reddit.com/r/dataengineering/comments/1o8apr1/how_would_you_handle_nwp_data_and_customer_data/,False,False,False,False
+1o88lxr,Is Azure blob storage slow as fuck?,"Hello,
+
+I'm seeking help with a bad situation I have with Synapse + Azure storage (ADLS2).
+
+The situation: I'm forced to use Synapse notebooks for certain data processing jobs; a couple of weeks ago I was asked to create a pipeline to download some financial data from a public repository and output it to Azure storage.
+
+Said data is very small, a few Megabytes at most. So I first developed the script locally, used Polars for dataframe interface and once I verified everything worked, I put it online.
+
+# Edit
+
+Apparently I failed to explain myself since nearly everyone who answered, implicitly thinks I'm an idiot, so while I'm not ruling that option out I'll just simplify:
+
+* I have some code that reads data from an online API and writes it somewhere.
+* The data is a few MBs.
+* I'm using Polars, not Pyspark
+* Locally it runs in one minute.
+* On Synapse it runs in 7 minutes.
+* Yes, I did account for pool spin up time, it takes 7 minutes after the pool is ready.
+* Synapse and storage account are in the same region.
+* I am FORCED to use Synapse notebooks by the organization I'm working for.
+* I don't have details about networking at the moment as I wasn't involved in the setup, I'd have to collect them.
+
+Now I understand that data transfer goes over the network, so it's gotta be slower than writing to disk, but what the fuck? 5 to 10 times slower is insane, for such a small amount of data.
+
+This also makes me think that the Spark jobs that run in the same environment would be MUCH faster in a different setup.
+
+So this said, the question is, is there anything I can do to speed up this shit?
+
+\---
+
+old message:
+
+>!~~The problem was in the run times. For the same exact code and data:~~!<
+
+* >!~~Locally, writing data to disk, took about 1 minute~~!<
+* >!~~On Synapse notebook, writing data to ADLS2 took about 7 minutes~~!<
+
+>!~~Later on I had to add some data quality checks to this code and the situation became even worse:~~!<
+
+* >!~~Locally only took 2 minutes.~~!<
+* >!~~On Synapse notebook, it took 25 minutes.~~!<
+
+>!~~Remember, we're talking about a FEW Megabytes of data. Under suggestion of my team lead I tried to change destination an used a blob storage of premium tier (this one in the red).~~!<
+
+>!~~It did have some improvements, but only went down to about 10 minutes run (vs again the 2 mins local).~~!<",3,40,wtfzambo,2025-10-16 15:05:09,https://www.reddit.com/r/dataengineering/comments/1o88lxr/is_azure_blob_storage_slow_as_fuck/,False,False,False,False
+1o88isc,"Every company is a data company, but most don't know where to start",,1,0,jorinvo,2025-10-16 15:01:50,https://taleshape.com/blog/getting-started-building-a-data-platform/,False,False,False,False
+1o84cs6,data engineering test,"hey guys! so, i have an assessment to do in the next 4 days regarding a job position, for a junior data engineer role. i’ve never had to do one so idk what is the best place to find material to study and train
+do you guys recommend anything? any website or material? i believe the test will be focused on pyspark and sql",1,0,ExampleInteresting11,2025-10-16 12:06:32,https://www.reddit.com/r/dataengineering/comments/1o84cs6/data_engineering_test/,False,False,False,False
+1o82bhc,Help creating a mega app for my company,"I am a data analytics apprentice, fairly new to my company. Day to day i dont just do data analysis but basically anything to do with managing my company's data. 
+
+Currently im involved in a large project where i will be the lead from the digital team. The idea is to create a 'mega app' to be used within the product testing process of the company. This process has many stages, with lots of crucial data being stored at each stage. 
+
+Ultimately, we aim to build a powerful front end. This will allow for everyone involved in the process to input data, read data, see where a product is in the testing process, plus a load more functions. We want this to link with a powerful back end where we can have lots of tables (say 20) which can hold all of the data, be related together where necessary and, most importantly, link well with the front end so that data can be written to and read from the back end using the front end. 
+
+The size of these tables may range from 100 rows to 100s of thousands. Reading and writing data needs to be quick. Also, having the ability to create reports and dashboards from this data is necessary. Finally, we want to be able to have an AI agent integrated into the system to pull answers to user questions from the database.
+
+After some research, my manager is interested in using the power platform (power apps for the front end, dataverse for the back end. Also allows for copilot agent integration and powerBI and power automate). However, after trying out this system im slightly questioning if this is the right solution for this scale of project, especially in the long term.
+
+My main questions are:
+1. Is the power platform capable of creating a system of this scale and is it feasible?
+2. Are there any much better alternatives that we should consider (skill required to use isnt an issue)
+3. Are there any other subreddits where i should put this post?
+
+All help is appreciated, thank you",1,4,ConsiderationMuch937,2025-10-16 10:14:47,https://www.reddit.com/r/dataengineering/comments/1o82bhc/help_creating_a_mega_app_for_my_company/,False,False,False,False
+1o8208j,Expanding a local dbt-core project to production — should I integrate with Airflow or rely on CI/CD + Pre-Prod?,"Hi I'm Steve.
+
+Our organization running dbt-core locally and want to move it into production
+
+We already use Airflow on Kubernetes and CI/CD vis GitHub Actions.
+
+Curious what others do - run dbt inside Airflow DAGs? or just let CI/CD handle it separately?
+
+Any pros/cons you've seen in production?
+
+Additional.
+
+We are using...
+
+Apache Airflow 2.7.3 (running in Kubernetes)
+
+dbt-core 1.9.1 (Just test, run in local environment)
+
+And we have two repositories:
+
+* One for Apache Airflow DAGs
+* One for dbt-core
+
+Would you recommend we have to integrate them or keeping seperate?
+
+I wish you guys help us :)",1,1,Upstairs_Pack3280,2025-10-16 09:55:34,https://www.reddit.com/r/dataengineering/comments/1o8208j/expanding_a_local_dbtcore_project_to_production/,False,False,False,False
+1o8jom8,Large memory consumption where it shouldn't be with delta-rs?,"I know this isn't a sub specifically for technical questions, but I'm really at a loss here. Any guidance would be greatly appreciated.
+
+Disclaimer that this problem is with delta-rs (in Python), not Delta Lake with Databricks.
+
+The project is simple: We have a Delta table, and we want to update some records.
+
+The solution: use the merge functionality.
+
+    dt = DeltaTable(""./table"")
+    updates_df = get_updates()
+    
+    dt.merge(
+        updates_df,
+        predicate=(
+            ""target.pk       = source.pk""
+            ""AND target.salt = source.salt""
+            ""AND target.foo  = source.foo""
+            ""AND target.bar != source.bar""
+        ),
+        source_alias=""source"",
+        target_alias=""target"",
+    ).when_matched_update(
+        updates={""bar"": ""source.bar""}
+    ).execute()
+
+The above code is essentially a simplified version of what I have, but all the core pieces are there. It's quite simple in general. The delta table in `./table` is very very large, but it is partitioned nicely with around 1M records per partition (salted to get the partitions balanced). Overall there's \~2B records in there, while `updates_df` has 2M.
+
+The problem is that the merge operation balloons memory **massively** for some reason. I was under the impression that working with partitions would drastically decrease the memory consumption, but no. It eventually OOMs, exceeding 380G. This doesn't make sense. Doing a join on the same column between the two tables with duckdb, I find that there would be \~120k updates across 120 partitions (there are a little over 500 partitions). For one, duckdb can handle the join just fine, and two, it's working with such a small amount of updates. How is it using so much? The partitioned columns are `pk` and `salt`, which I am using in the predicate, so I don't think it has anything to do with lack of pruning.
+
+If anyone has any experience with this or the solution is glaringly obvious (never used Delta before), then I'd love to hear your thoughts. Oh and if you're wondering why I don't use a more conventional solution for this - that's not my decision. And even if it were, now I'm just curious at this point.",0,4,echanuda,2025-10-16 22:02:34,https://www.reddit.com/r/dataengineering/comments/1o8jom8/large_memory_consumption_where_it_shouldnt_be/,False,False,False,False
+1o83xw9,Any free solution for integrating BI into React Website?,"Spent two days creating a DBT medallion architecture pipeline for creating a dashboard from a Postgres DB containing 25+ tables which was highly normalised. Today they tell me the requirements have changed and they want the dashboard Integrated to website directly ( even iframe won't work).
+
+I was explaining the pipeline to some full stack devs and explained them why I created the gold layer and it is essential for adding BI services. They were highly dismissive of it saying that's not how things should be ( we were discussing how we can make the dashboard using chart.js which I know nothing about).
+
+Did they have a point( for building the dashboard directly in React using APIs? or should I ignore them?",0,3,Potential_Loss6978,2025-10-16 11:45:42,https://www.reddit.com/r/dataengineering/comments/1o83xw9/any_free_solution_for_integrating_bi_into_react/,False,False,False,False
+1o8jwky,Dores do dia a dia,"\[PT-BR\] Ei galera, qual é a tarefa mais chata e manual que você(s) faz(em) com dados?
+
+\[EN\] Hey guys, what's the most boring and manual task you do with data?",1,4,Vegetable-Strike-632,2025-10-16 22:11:41,https://www.reddit.com/r/dataengineering/comments/1o8jwky/dores_do_dia_a_dia/,False,False,False,False
+1o88lg6,Suggestion needed with Medallion Architecture,"Hi, I'm new to databricks (Please go easy) and  i'm trying to implement an ETL pipeline for data coming from different sources for end users in our company. Although new data comes in the Azure SQL Database daily basis (we anticipate 10 GB approximately of data on the weekly basis).
+
+  
+We get also get Files in Landing Zone (ADLS Gen2) on weekly basis (Upto 50 GB).
+
+Now we need to process all of this data weekly.  Currently, i have come up with this medallion architecture:
+
+**Landing to Bronze:**
+
+**-> data in azure sql source**
+
+	\-> Using ADF to copy the files from azure sql (multiple database instances) to bronze. 
+
+	\-> We have a configuration file from which we know, what is the database, table, the load type (full load/incremental), datasource
+
+	\-> We process the data accordingly and also have an audit table where the watermark for tables with incremental load is maintained
+
+	\-> Creating delta tables on the bronze (the tables here contain the data source and timestamp columns as well)
+
+**-> data in landing zone**
+
+\-> using autoloader to copy the files from landing zone to bronze
+
+	\-> Landing zone uses a fairly nested structure (files arriving weekly).	
+
+\-> Also fetching ICD Codes from athena and saving then to bronze.
+
+\-> We create delta tables in the bronze layer.
+
+**Silver:**
+
+\-> From bronze, we read the data into silver. This is incremental using MERGE UPSERT (Is there a better approach)
+
+\-> We apply Common Data Model in the Silver Layer and Type SCD 2 for dimension tables. Here 
+
+\-> We do the quality checks as well. On failures we halt the pipeline as the data quality is critical to the end user.
+
+\-> We are also get the data dictionary so schema evolution is handled by using a custom schema registry and compare the current infered schema with the latest schema version we are maintaining. All of these come under the data quality checks. If anyone fail, we send email.
+
+\-> The schema is checked for the raw files we receive in the ADLS2 Landing Zone.
+
+**Gold:**
+
+\-> Data is loaded from silver to Gold Layer with predefined data model 
+
+
+
+Please tell me what changes i can make in this approach?",0,5,Time-Cardiologist-51,2025-10-16 15:04:36,https://www.reddit.com/r/dataengineering/comments/1o88lg6/suggestion_needed_with_medallion_architecture/,False,False,False,False
+1o83jwp,Best way to run a detailed global market model - Google Sheets?,"I run a huge data product that gives information on the revenue and susbcriber numbers of most major video services in the world (e.g. Netflix) on a by-country basis.
+
+currently this is split across 14 siloed Google Sheets , that are largely not linked with eachother (except for some core demographic data which all points to another single sheet). There are 2 Google Sheets for each of the 7 global regions we cover, with a tab for every country in that region, as well as summary tabs for every data point.
+
+this seems like a crazily inefficient way to run a model this size but I don't have a background in data and am unsure how I could improve the process. any ideas? could learning SQL (or anything else) help me? ",0,1,ThisEconomist4908,2025-10-16 11:25:08,https://www.reddit.com/r/dataengineering/comments/1o83jwp/best_way_to_run_a_detailed_global_market_model/,False,False,False,False
+1o8l2lw,Changing career as DE at the Canadian Army – Will AI Replace Me or Open New Doors?,"Just was selected for a contract with the Canadian army as a DE, mainly AWS, Pyspark, SQL.  
+I am not an expert in SQL nor in Pyspark, but will bring to the team my experience with Cloud architecture, best security practices, IaC (I have many years experience with IaC architecture, automation and development). And, hopefully, will improve my skills with Pyspark and data streaming, and long term, learn more ML/AI models fine tuning and deployment at scale.
+
+With all what I read about AI replacing DE jobs, do you think it's a good move for my career ?  
+  
+I believe AI will replace few jobs but will have many new others created (like any other technological breakthrough discoveries) and I don't believe the doomers seeing the end of the world every time a new technology is discovered, one has to stay curious and open to explore new horizons...",0,7,neo-crypto,2025-10-16 23:01:11,https://www.reddit.com/r/dataengineering/comments/1o8l2lw/changing_career_as_de_at_the_canadian_army_will/,False,False,False,False
+1o85f8n,Intelligent Applications: The Next Step in Data-Driven Decision-Making,,0,0,sadyetfly11,2025-10-16 12:56:37,https://news.sap.com/2025/10/intelligent-applications-data-driven-decision-making/,False,False,False,False
+1o8a5pd,The problem with SQL,"
+===========  HEADLINE ===========
+Im unemployed and trying to get a job in DE. How do I get to where I want to be? How do I make that “impression “ to at least get a nibble? 
+
+
+===========  BODY ===========
+Im in a little bit of a rut- trying to break into DE- but one issue/challenge I keep encountering: I cannot speak SQL. 
+
+Im trying to make the switch from DA/DS (3yrs) and Ive grown to appreciate the logical steps that SQL abstracts, allowing me to focus on what I want and not how to get what I want. This appreciation has only grown as I dive deeper into learning about Spark SQL (glob reading is so rad) , psql, duckdb sql (duck sql????), tsql, snowflake, and SQLITE. From CTEs to wacky ass ‘quirks’/unique capabilities/strengths (Snowflake qualify!!! <- really miss it when I now gotta heavy nest simply for that row_num=1)
+
+This appreciation has grown to launching setting up and tearing down new DB clusters to learn more and more about the actual DB Engines and administration. Postgres has been by far my favourite: its extension suite is really sweet (hope to get to dig into Apache AGE soon!). 
+
+I’m now unemployed and looking for a job (last job was a contract). Every application I send out feels like its destined for nowhere. The other day a recruiter accused me of cheating on a technical assessment and it really was a gut punch. I want to become a data engineer, and Ive been putting so much work into learning all the cool knicks to making full bronze-> gold layers with ‘challenging’ data sets (+ vibed coded backend/front end lol).  So, when someone asks if I know SQL, im inclined to ask what dialect/what part.
+
+
+Apologies for the rant but Im just frustrated and feel like no matter how much effort I put into the bare metal of it all, its all for nothing bc I don’t have experience with Databricks (fuck it Ill make my own eco with docker and navigate JAR hell), DBT (never had a reason to use it; I have primarily relied on some greasy ass JSONs) , or some other stack/platform. 
+
+PS. One feel good moment did happen though bc I was able to bust out lambda functions on the python segment and idk, it made me realize how far Ive come!
+PPS. Please criticize the hell out of this post, and anything I comment; I am hear to listen.
+
+
+
+
+",0,4,Bitter_Marketing_807,2025-10-16 16:03:05,https://www.reddit.com/r/dataengineering/comments/1o8a5pd/the_problem_with_sql/,False,False,False,False
+1o8cc87,Why I'm building a new kind of ETL tool...,"At my current org, I developed a dashboard analytics feature from scratch. The dashboards are powered by Elasticsearch, but our primary database is PostgreSQL.
+
+I initially tried using [pgsync](https://pgsync.com/), an open-source library that uses Postgres WAL (Write-Ahead Logging) replication to sync data between Postgres and Elasticsearch, with Redis handling delta changes.
+
+The issue was managing multi-tenancy in Postgres with this WAL design. It didn't fit our architecture.
+
+What ended up working was using Postgres Triggers to save minimal information onto RabbitMQ. When the message was consumed, it would make a back lookup to Postgres to get the complete data. This approach gave us the control we needed and helped scaling for multi-tenancy in Postgres.
+
+The reason I built it in-house was purely due to complex business needs. None of the existing tools provided control over how quickly or slowly data is synced, and handling migrations was also an issue.
+
+That's why I started [ETLFunnel](https://etlfunnel.com). It has only one focus: **control must always remain with the developer.**
+
+ETLFunnel acts as a library and management tool that guides developers to focus on their business needs, rather than dictating how things should be done.
+
+If you've had similar experiences with ETL tools not fitting your specific requirements, I'd be interested to hear about it.
+
+# Current Status
+
+I'm building in public and would love feedback from developers who've felt this pain.",0,9,Meal_Last,2025-10-16 17:22:35,https://www.reddit.com/r/dataengineering/comments/1o8cc87/why_im_building_a_new_kind_of_etl_tool/,False,False,False,False
