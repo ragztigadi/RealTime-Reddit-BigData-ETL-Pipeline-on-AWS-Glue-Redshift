@@ -1,0 +1,125 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1oa0bi3,Best approach to large joins.,"Hi I’m looking at table that is fairly large 20 billion rows.  Trying to join it against table with about 10 million rows. It is aggregate join that an accumulates pretty much all the rows in the bigger table using all rows in smaller table.  End result not that big. Maybe 1000 rows. 
+
+What is strategy for such joins in database.  We have been using just a dedicated program written in c++ that just holds all that data in memory.  Downside is that it involves custom coding, no sql, just is implemented using vectors and hash tables. Other downside is if this server goes down it takes some time to reload all the data.  Also machine needs lots of ram.  Upside is the query is very fast.
+
+I understand a type of aggregate materialized view could be used.  But this doesn’t seem to work if clauses added to where. Would work for a whole join though.
+
+What are best techniques for such joins or what end typically used ?
+
+",39,35,Nearing_retirement,2025-10-18 16:30:13,https://www.reddit.com/r/dataengineering/comments/1oa0bi3/best_approach_to_large_joins/,False,False,False,False
+1o9q246,Data Factory extraction techniques,Hey looking for some direction on Data factory extraction design patterns. Im new to the Data Engineering world but i come from infrastructure with experience standing Data factories and some simple pipelines. Last month we implemented a Databricks DLT Meta framework that we just scrapped and pivoted to a similar design that doesn't rely on all those onboarding ddl etc files. Now its just dlt pipelines perfoming ingestion based on inputs defined in asset bundle when ingesting. On the data factory side our whole extraction design is dependent on a metadata table in a SQL Server database. This is where i feel like this is a bad design concept to totally depend on a unsecured non version controlled table in a sql server database. That table get deleted or anyone with access doing anything malicious with that table we can't extract data from our sources. Is this a industry standard way of extracting data from sources? This feels very outdated and non scalable to me to have your entire data factory extraction design based on a sql table. We only have 240 tables currently but we are about to scale in December to 2000 and im not confident in that scaling at all. My concerns fall on deaf ears due to my co workers having 15+ years in data but primary using Talend not Data Factory and not using Databricks at all. Can someone please give me some insights on modern techniques if my suspicions are correct? ,9,18,Upstairs_Drive_305,2025-10-18 08:05:43,https://www.reddit.com/r/dataengineering/comments/1o9q246/data_factory_extraction_techniques/,False,False,False,False
+1o9x20y,thoughts on databricks genie,"Hi everyone, what are your thoughts on Databricks genie? I am just worried about it hallucinating or my business team relying too much on gen AI. Do you guys use it and is it comparable to other products and platforms?? What would you recommend instead and what don’t you like about it??",4,16,Ambitious-Option5637,2025-10-18 14:19:13,https://www.reddit.com/r/dataengineering/comments/1o9x20y/thoughts_on_databricks_genie/,False,False,False,False
+1o9uqkv,How to convince my boss that table is the way to go,"Hi all,
+
+following the discussion here:  
+[https://www.reddit.com/r/dataengineering/comments/1n7b1uw/steps\_in\_transforming\_lake\_swamp\_to\_lakehouse/](https://www.reddit.com/r/dataengineering/comments/1n7b1uw/steps_in_transforming_lake_swamp_to_lakehouse/)
+
+Ive explained my boss that the solution is to create some kind of pipeline that:  
+1. model the data  
+2. transform it to tabular format (Iceberg)  
+3. save it as parquet with some metadata
+
+He insist that its not correct - and there is much better and easy solution - which is to index all the data and create our own metadata files that will have the location of the files we are looking for (maybe like MongoDB)  
+another aspect why he against the idea of table format is because all our testing pipeline is based on some kind of json format (we transform the raw json to our own msgpec model).
+
+how can I deliver to him that we are getting all this indexing for free when we are using iceberg, and if we miss some indexing in his idea we will need to go over all the data again and again.
+
+Thank (for his protection he has 0 background in DE) ",6,13,CompetitionMassive51,2025-10-18 12:41:09,https://www.reddit.com/r/dataengineering/comments/1o9uqkv/how_to_convince_my_boss_that_table_is_the_way_to/,False,False,False,False
+1o9xi5u,How to deploy airflow project on EC2 instance using Terraform.,"I'm currently working on deploying an Apache Airflow project to AWS EC2 using Terraform, and I have a question about how to handle the deployment of the project files themselves. I understand how to use Terraform to provision the infrastructure, but I’m not sure about the best way to automatically upload my entire Airflow project to the EC2 instance that Terraform creates. How do people typically handle this step?
+
+Additionally, I’d like to make the project more complete by adding a machine learning layer, but I’m still exploring ideas. Do you have any suggestions for some ML projects using Reddit data? 
+
+Thank you in advance for your attention.",4,5,FindingVinland,2025-10-18 14:37:11,https://www.reddit.com/r/dataengineering/comments/1o9xi5u/how_to_deploy_airflow_project_on_ec2_instance/,False,False,False,False
+1oaa9jv,Evaluating my proposed approach,"Hey guys, looking for feedback on a potential setup. For context, we are a medium sized company and our data department consists of me, my boss and one other analyst. I'm the most technical one, the other two can connect to a database in Tableau and that's about it. I'm fairly comfortable writing Python scripts and SQL queries, but I am not a software engineer.
+
+We currently have MS SQL Server on prem that was set up a decade ago and is reaching its end of life in terms of support. For ETL, we've been using Alteryx for about as long as that, and for reporting we have Tableau Server. We don't have that much data (550GB total), and we ingest about 50k rows an hour in batched CSV files that our vendors send us. This data is a little messy and needs to be cleaned up before a database can ingest it.
+
+With the SQL Server getting old and our renewal conversations with Alteryx going extremely poorly, my boss has directed me to research options for replacing both, or scaling Alteryx down to just the last mile for Tableau Server. Our main purposes are 1) upgrade our data warehouse to something with as little maintenance as possible and 2) continue to serve our Tableau dashboards 3) make ad-hoc analysis in Tableau possible for my boss and the other analyst. Ideally, we'd keep our costs to under 70k a year.
+
+So far I've played around with Databricks, Clickhouse, Prefect, Dagster, and have started doing the dbt fundementals courses to get a better idea of it. While I liked Databricks's unity catalog and time travel capabilities of delta tables, the price and computing power of spark seems like overkill for our purposes/size. It felt like I was spending a lot of time spinning up clusters and frivolously spending cash working out the syntax.
+
+Clickhouse caught my eye since it promises fast query times, it is easy enough to set up and put together a sample pipeline together, and the cloud database offering seems cheaper than DBX. It's nice that dbt-core can be used with it as well, because just writing queries and views inside the cloud console there seems like it can get hairy and confusing really fast.
+
+So far, I'm thinking that we can run local Python scripts for ingesting data into Clickhouse staging tables, then write views on top of those for the cleaner silver + gold tables and let Alteryx/analysts connect to those. The tricky part with CH is how it manages upserts/deletions behind the scenes, but I think with ReplacingMergeTrees and solid queries, we could get around those limitations. It's also less forgiving with schema drift and inferring data types.
+
+So my questions are as follows:
+
+
+* Does my approach make sense? 
+* Are there other products worth looking into for my use case?
+* How do you guys evaluate the feasibility of a setup when the tools are new to you?
+* Is Clickhouse in your experience a solid product that will be around for the next 5-10 years?
+
+
+Thank you for your time.",4,5,SoloArtist91,2025-10-18 23:08:47,https://www.reddit.com/r/dataengineering/comments/1oaa9jv/evaluating_my_proposed_approach/,False,False,False,False
+1oa26wu,What is the right tool for running adhoc scripts (with some visibility),"We have many adhoc scripts to run at our org like:
+
+1. postgres data insertions based on certain params
+
+2. s3 to postgres 
+
+3. run certain data cleaning scripts
+
+  
+I am thinking to use dagster for this because I need to have some visibility into when the devs are running certain scripts, view logs, track them etc.
+
+  
+I am I in the right direction to think about using dagster ? or any other tool better suits this purpose ??
+
+  
+",4,5,srimanthudu6416,2025-10-18 17:45:07,https://www.reddit.com/r/dataengineering/comments/1oa26wu/what_is_the_right_tool_for_running_adhoc_scripts/,False,False,False,False
+1oabl3i,"For anyone working with Salesforce data in BigQuery, how are you handling formula fields?","I am currently using big query salesforce data transfer service to ingest salesforce data - right now it is on a preview mode and only supports full refreshes
+
+Google is releasing incremental updates feature to the connector, which is the more efficient option
+
+Problem with salesforce data is the formula fields and how they’re calculated on the go instead of storing actual data on the object 
+
+I have a transaction data object with 446 fields and 183 of those fields are calculated/formula fields
+
+Some fields , like customer_address_street, is a formula field that references the customer object
+
+If the address on the customer record on the customer object gets updated, the corresponding row(s) referencing the same customer on the transaction object will not get updated as the transaction row is not explicitly updated, and thus the systemmodstamp field remains unchanged
+
+Incremental refreshes wont capture this change of data and the transaction row from the transaction object will show the old address of the customer.
+
+How are you currently handling this behaviour? Especially for objects with 183 formula fields, and more being added within the salesforce database?
+
+Ideally i want my salesforce data to refresh every 2 hours in the warehouse
+
+*For reference, i develop BI dashboards and i have very little experience in data engineering ",2,0,tytds,2025-10-19 00:10:11,https://www.reddit.com/r/dataengineering/comments/1oabl3i/for_anyone_working_with_salesforce_data_in/,False,False,False,False
+1oabngc,How to prepare for DS/ML assessments?,"I'm looking for tips on how to prepare for DS/ML theory assessment.
+
+ I've done an online assessment for a DS grad scheme today. It involved SQL and Python  questions which were a bit challenging for me but alright. The second part was DS theory questions. I was challenged by this part. In the past I have done 10+ DS projects but I'm a bit rusty and lack some of the theory. I just graduated from University of Cambridge Maths so mathematics is my bread and butter. However, I would like to get more comfortable with the theory of DS, I don't think I will need to study more maths than I know. I also realised that although I am comfortable with usual Python, I was a bit rusty with pandas and numpy since I haven't used them in a while.
+
+I don't think I need to, and I don't want to, invest tens of hours into doing fake DS projects with datasets from Kaggle etc. Because I think I already have a good foundation and I just want to know enough pass these multiple choice DS theory assessments. I would be glad if someone could recommend resources to study for these theory questions. I am listing some examples to give you a better idea of the questions that came up today.
+
+1. What does ensemble training do?
+
+2. How do bagging and boosting affect variance and bias?
+
+3. What is the correct pairing of bagging and boosting when suing lightgbm and random forest? i.e. which one should we use bagging for and which one should be use boosting for? 
+
+4. (They gave a graph of an overfitting model with training score going upwards after some numbers of epochs) Looking at this graph and assuming we're using a random forest model, what is the best idea to improve the model? (The multiple choice answers included: increasing the number of trees, increasing the depth of the trees, and adding early stopping).
+
+5. Which one of the following groups of ML techniques includes only supervised learning methods?
+
+6. What is the best metric to use if we want to reduce type 1 error? (the choices were precision, recall, specificity etc.)
+
+6. Some other questions on XGBoost, Linear regression etc.
+
+
+
+I think this gives you a good idea of what kind of questions I'm dealing with. I would like to get comfortable with these kinds of questions without investing tens of hours into doing projects, since I already know most of the theory and know all of the underpinning maths I don't see spending that much time on this. 
+
+
+
+Finally my questions to you guys are:
+
+1. How to prepare for these kind of DS multiple-choice theory questions?
+
+2. I would like to recall basic pandas/numpy stuff without doing more projects. Leetcode doesn't cater for that I think. How to recall my pandas/numpy skills without spending too much time on it.
+
+  
+All constructive suggestions are appreciated...",0,1,Salty_Magician_4984,2025-10-19 00:13:33,https://www.reddit.com/r/dataengineering/comments/1oabngc/how_to_prepare_for_dsml_assessments/,False,False,False,False
+1oa7fk5,Is the data engineering job market good?,I am completely new to this. I just switched from mathematics to data engineering and had my first job. I am wondering whether the job market of this particular profession is tough or not? The US and Europe are both of interest to me. ,0,6,Dry_Masterpiece_3828,2025-10-18 21:07:54,https://www.reddit.com/r/dataengineering/comments/1oa7fk5/is_the_data_engineering_job_market_good/,False,False,False,False
