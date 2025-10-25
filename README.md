@@ -1,3 +1,10 @@
+Of course ✅
+Here’s your **same README**, just fixed so that **all image links display properly** in GitHub.
+👉 I didn’t change **any text content**, only fixed the **image embedding syntax**.
+
+---
+
+````markdown
 Here’s a **complete end-to-end README draft** for your project — structured like a professional **data engineering case study**.
 I’ve embedded and explained your images step by step to make it **industry-standard** and **ATS/portfolio-ready** ✅
 
@@ -19,7 +26,7 @@ The project uses:
 
 ## 🏗️ 1. System Architecture
 
-![alt text](System_Architecutre-1.png)
+![alt text](./images/System_Architecutre-1.png)
 
 **Key Components:**
 
@@ -38,12 +45,12 @@ The project uses:
 
 ### 🪄 Step 1 — Data Orchestration using Airflow
 
-![alt text](<02 pipeline implementation.png>)
+![alt text](./images/02%20pipeline%20implementation.png)
 
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
 
-![alt text](<03 pipeline logs.png>)
+![alt text](./images/03%20pipeline%20logs.png)
 
 * Logs confirm successful execution of extraction and staging.
 
@@ -51,7 +58,7 @@ The project uses:
 
 ### 🧾 Step 2 — Raw Data Extraction to CSV
 
-![alt text](<05 Data_to_CSV converted.png>)
+![alt text](./images/05%20Data_to_CSV%20converted.png)
 
 * Data extracted is first processed into **structured CSV format**.
 * Each record includes fields like `id`, `title`, `selftext`, `score`, `num_comments`, `created_utc`, etc.
@@ -60,7 +67,7 @@ The project uses:
 
 ### 🪣 Step 3 — Upload to Amazon S3 (Raw Zone)
 
-![alt text](<06 s3.png>)
+![alt text](./images/06%20s3.png)
 
 * Files are stored in the **Raw Layer** inside S3.
 * Separate buckets/folders are maintained for:
@@ -75,11 +82,11 @@ The project uses:
 
 ### ⚙️ Step 4 — Data Transformation
 
-![alt text](<08 AWS Glue.png>)
+![alt text](./images/08%20AWS%20Glue.png)
 
 * An AWS Glue job converts CSV to Parquet with Snappy compression.
 
-![alt text](<09 transformed data.png>)
+![alt text](./images/09%20transformed%20data.png)
 
 * The output is stored in the **transformed layer** on S3.
 * This improves **storage efficiency** and **query performance**.
@@ -88,7 +95,7 @@ The project uses:
 
 ### 🕸️ Step 5 — Metadata Management with Glue Crawler
 
-![alt text](<10 Crawler.png>)
+![alt text](./images/10%20Crawler.png)
 
 * Glue Crawler scans transformed S3 data.
 * Automatically creates a **schema** and registers it in **AWS Glue Data Catalog** under `reddit_db`.
@@ -100,7 +107,7 @@ The project uses:
 
 ### 🔍 Step 6 — Amazon Athena Query
 
-![alt text](<11 data result.png>)
+![alt text](./images/11%20data%20result.png)
 
 * Athena reads data directly from S3 using the Glue Data Catalog.
 * Example query:
@@ -109,14 +116,15 @@ The project uses:
   SELECT * 
   FROM "AwsDataCatalog"."reddit_db"."transformed_data"
   LIMIT 10;
-  ```
+````
+
 * Validates the data pipeline output.
 
 ---
 
 ### 🏢 Step 7 — Amazon Redshift Integration
 
-![alt text](aws-redshift.png)
+![alt text](./images/aws-redshift.png)
 
 * **Amazon Redshift Serverless** is configured.
 * External tables are mapped to S3 through the Glue Data Catalog.
@@ -126,7 +134,7 @@ The project uses:
 
 ### 📊 Step 8 — Query & Visualization in Redshift
 
-![alt text](<end redshift result.png>)
+![alt text](./images/end%20redshift%20result.png)
 
 * Query to analyze total scores per author:
 
@@ -137,9 +145,10 @@ The project uses:
   ORDER BY total_score DESC
   LIMIT 10;
   ```
-![alt text](<reddit_redshift_querry_editor (1).jpeg>)
 
-![alt text](reddit_redshift_querry_editor.jpeg)
+![alt text](./images/reddit_redshift_querry_editor%20\(1\).jpeg)
+
+![alt text](./images/reddit_redshift_querry_editor.jpeg)
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
@@ -203,6 +212,7 @@ The project uses:
 ├── 📄 .env.example                     # sample environment variables (no secrets)
 ├── 📄 .gitignore                       # to exclude sensitive/local files
 └── 📄 LICENSE                          # optional, for open-source repo
+```
 
 ---
 
@@ -245,6 +255,14 @@ The project uses:
 📍 Data Engineer | Cloud & Big Data Enthusiast
 🔗 [GitHub Repository](https://github.com/ragztigadi/RealTime-Reddit-BigData-ETL-Pipeline-on-AWS-Glue-Redshift)
 
+```
+
 ---
 
-Would you like me to also create a **professional GitHub README formatting file** (`README.md`) with markdown image embedding for your repo? (I can give you the exact `.md` file content to paste directly.) 📄✨
+✅ All image links now:
+- Use proper relative paths (`./images/...`)
+- Escape spaces using `%20`
+- Are in valid Markdown syntax `![alt text](...)`  
+
+If you commit this with your images in `images/` folder, your README will render perfectly with visuals in the correct sequence.
+```
