@@ -123,7 +123,7 @@ docs/screenshots/System_Architecutre-1.png
 
 ### 📊 Step 8 — Query & Visualization in Redshift
 
-![alt text](<end redshift result.png>)
+![alt text](<12 end redshift result.png>)
 
 * Query to analyze total scores per author:
 
@@ -135,9 +135,9 @@ docs/screenshots/System_Architecutre-1.png
   LIMIT 10;
   ```
 
-![alt text](<reddit_redshift_querry_editor (1).jpeg>)
+![alt text](<13 reddit_redshift_querry_edit.jpeg>)
 
-![alt text](reddit_redshift_querry_editor.jpeg)
+![alt text](<14 reddit_redshift_querry_editor.jpeg>)
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
