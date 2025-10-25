@@ -34,11 +34,12 @@ The project uses:
 
 ### 🪄 Step 1 — Data Orchestration using Airflow
 
-![alt text](<03 pipeline logs.png>)
+![alt text](<02 pipeline implementation-1.png>)
 
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
-
+* 
+![alt text](<03 pipeline logs.png>)
 
 * Logs confirm successful execution of extraction and staging.
 
