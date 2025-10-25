@@ -113,7 +113,7 @@ docs/screenshots/System_Architecutre-1.png
 
 ### 🏢 Step 7 — Amazon Redshift Integration
 
-![alt text](aws-redshift.png)
+![alt text](<end redshift result-1.png>)
 
 * **Amazon Redshift Serverless** is configured.
 * External tables are mapped to S3 through the Glue Data Catalog.
@@ -135,9 +135,9 @@ docs/screenshots/System_Architecutre-1.png
   LIMIT 10;
   ```
 
-![alt text](<reddit_redshift_querry_editor (1)-1.jpeg>)
+![alt text](<reddit_redshift_querry_editor (1).jpeg>)
 
-![alt text](reddit_redshift_querry_editor-1.jpeg)
+![alt text](reddit_redshift_querry_editor.jpeg)
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
