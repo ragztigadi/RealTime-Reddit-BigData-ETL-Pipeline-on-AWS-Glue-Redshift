@@ -41,7 +41,7 @@ def upload_to_s3(s3: s3fs.S3FileSystem, file_path: str, bucket: str, s3_file_nam
     """
     try:
         s3.put(file_path, f"{bucket}/raw/{s3_file_name}")
-        print(f"📤 File '{s3_file_name}' uploaded to bucket '{bucket}/raw/'")
+        print(f"File '{s3_file_name}' uploaded to bucket '{bucket}/raw/'")
     except FileNotFoundError:
         print(f" The file '{file_path}' was not found")
     except Exception as e:
