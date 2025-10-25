@@ -39,7 +39,7 @@ docs/screenshots/System_Architecutre-1.png
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
 
-docs/screenshots/03 pipeline logs.png
+![alt text](<03 pipeline logs.png>)
 
 * Logs confirm successful execution of extraction and staging.
 
@@ -47,7 +47,7 @@ docs/screenshots/03 pipeline logs.png
 
 ### 🧾 Step 2 — Raw Data Extraction to CSV
 
-docs/screenshots/05 Data_to_CSV converted.png
+![alt text](<05 Data_to_CSV converted.png>)
 
 * Data extracted is first processed into **structured CSV format**.
 * Each record includes fields like `id`, `title`, `selftext`, `score`, `num_comments`, `created_utc`, etc.
@@ -56,7 +56,7 @@ docs/screenshots/05 Data_to_CSV converted.png
 
 ### 🪣 Step 3 — Upload to Amazon S3 (Raw Zone)
 
-docs/screenshots/06 s3.png
+![alt text](<06 s3.png>)
 
 * Files are stored in the **Raw Layer** inside S3.
 * Separate buckets/folders are maintained for:
@@ -71,11 +71,11 @@ docs/screenshots/06 s3.png
 
 ### ⚙️ Step 4 — Data Transformation
 
-docs/screenshots/08 AWS Glue.png
+![alt text](<08 AWS Glue.png>)
 
 * An AWS Glue job converts CSV to Parquet with Snappy compression.
 
-docs/screenshots/09 transformed data.png
+![alt text](<09 transformed data.png>)
 
 * The output is stored in the **transformed layer** on S3.
 * This improves **storage efficiency** and **query performance**.
@@ -84,7 +84,7 @@ docs/screenshots/09 transformed data.png
 
 ### 🕸️ Step 5 — Metadata Management with Glue Crawler
 
-docs/screenshots/10 Crawler.png
+![alt text](<10 Crawler.png>)
 
 * Glue Crawler scans transformed S3 data.
 * Automatically creates a **schema** and registers it in **AWS Glue Data Catalog** under `reddit_db`.
@@ -96,7 +96,7 @@ docs/screenshots/10 Crawler.png
 
 ### 🔍 Step 6 — Amazon Athena Query
 
-docs/screenshots/11 data result.png
+![alt text](<11 data result.png>)
 
 * Athena reads data directly from S3 using the Glue Data Catalog.
 * Example query:
@@ -113,7 +113,7 @@ docs/screenshots/11 data result.png
 
 ### 🏢 Step 7 — Amazon Redshift Integration
 
-docs/screenshots/aws-redshift.png
+![alt text](aws-redshift.png)
 
 * **Amazon Redshift Serverless** is configured.
 * External tables are mapped to S3 through the Glue Data Catalog.
@@ -123,7 +123,7 @@ docs/screenshots/aws-redshift.png
 
 ### 📊 Step 8 — Query & Visualization in Redshift
 
-docs/screenshots/end redshift result.png
+![alt text](<end redshift result.png>)
 
 * Query to analyze total scores per author:
 
@@ -135,9 +135,9 @@ docs/screenshots/end redshift result.png
   LIMIT 10;
   ```
 
-docs/screenshots/reddit_redshift_querry_editor (1).jpeg
+![alt text](<reddit_redshift_querry_editor (1).jpeg>)
 
-docs/screenshots/reddit_redshift_querry_editor.jpeg
+![alt text](reddit_redshift_querry_editor.jpeg)
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
