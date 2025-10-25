@@ -19,6 +19,7 @@ AWS_SECRET_ACCESS_KEY = parser.get('aws','aws_secret_access_key').strip()
 AWS_REGION = parser.get('aws','aws_region').strip()
 AWS_BUCKET_NAME = parser.get('aws','aws_bucket_name').strip()
 
+
 INPUT_PATH = parser.get('file_paths', 'input_path')
 OUTPUT_PATH = parser.get('file_paths', 'output_path')
 

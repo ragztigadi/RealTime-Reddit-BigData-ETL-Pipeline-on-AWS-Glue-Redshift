@@ -1,15 +1,13 @@
 import os
 import sys
 from datetime import datetime
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+from pipelines.reddit_pipeline import reddit_pipeline
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-
 from pipelines.reddit_pipeline import reddit_pipeline
 from pipelines.aws_s3_pipeline import upload_s3_pipeline
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 default_args ={
     'owner' : 'codewithRaghav',
@@ -36,12 +34,12 @@ extract = PythonOperator(
         'subreddit' : 'dataEngineering',
         'time_filter':'day',
         'limit':100 
-
     },
     dag=dag
 )
 
 # Upload to AWS S3 Bucket
+
 upload_s3 = PythonOperator(
     task_id='s3_upload',
     python_callable=upload_s3_pipeline,

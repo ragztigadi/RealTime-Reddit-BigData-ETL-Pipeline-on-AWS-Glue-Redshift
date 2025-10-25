@@ -1,3 +1,4 @@
+
 # pipelines/aws_s3_pipeline.py
 from utils.constants import AWS_REGION, AWS_BUCKET_NAME, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 import boto3
@@ -17,3 +18,5 @@ def upload_s3_pipeline(ti):
 
     create_bucket_if_not_exist(s3_client, AWS_BUCKET_NAME, AWS_REGION)
     upload_to_s3(s3, file_path, AWS_BUCKET_NAME, file_path.split('/')[-1])
+
+
