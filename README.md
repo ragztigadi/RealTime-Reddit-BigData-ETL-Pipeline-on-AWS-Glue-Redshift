@@ -1,14 +1,3 @@
-Of course ✅
-Here’s your **same README**, just fixed so that **all image links display properly** in GitHub.
-👉 I didn’t change **any text content**, only fixed the **image embedding syntax**.
-
----
-
-````markdown
-Here’s a **complete end-to-end README draft** for your project — structured like a professional **data engineering case study**.
-I’ve embedded and explained your images step by step to make it **industry-standard** and **ATS/portfolio-ready** ✅
-
----
 
 # 🚀 Real-Time Reddit Big Data ETL Pipeline on AWS (Glue + Redshift)
 
@@ -45,7 +34,7 @@ docs/screenshots/System_Architecutre-1.png
 
 ### 🪄 Step 1 — Data Orchestration using Airflow
 
-docs/screenshots/02 pipeline implementation.png
+![alt text](System_Architecutre-1.png)
 
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
@@ -255,14 +244,4 @@ docs/screenshots/reddit_redshift_querry_editor.jpeg
 📍 Data Engineer | Cloud & Big Data Enthusiast
 🔗 [GitHub Repository](https://github.com/ragztigadi/RealTime-Reddit-BigData-ETL-Pipeline-on-AWS-Glue-Redshift)
 
-```
-
----
-
-✅ All image links now:
-- Use proper relative paths (`./images/...`)
-- Escape spaces using `%20`
-- Are in valid Markdown syntax `![alt text](...)`  
-
-If you commit this with your images in `images/` folder, your README will render perfectly with visuals in the correct sequence.
 ```
