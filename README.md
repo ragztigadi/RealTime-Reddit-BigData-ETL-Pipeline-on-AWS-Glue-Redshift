@@ -26,7 +26,7 @@ The project uses:
 
 ## 🏗️ 1. System Architecture
 
-![alt text](./images/System_Architecutre-1.png)
+docs/screenshots/System_Architecutre-1.png
 
 **Key Components:**
 
@@ -45,12 +45,12 @@ The project uses:
 
 ### 🪄 Step 1 — Data Orchestration using Airflow
 
-![alt text](./images/02%20pipeline%20implementation.png)
+docs/screenshots/02 pipeline implementation.png
 
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
 
-![alt text](./images/03%20pipeline%20logs.png)
+docs/screenshots/03 pipeline logs.png
 
 * Logs confirm successful execution of extraction and staging.
 
@@ -58,7 +58,7 @@ The project uses:
 
 ### 🧾 Step 2 — Raw Data Extraction to CSV
 
-![alt text](./images/05%20Data_to_CSV%20converted.png)
+docs/screenshots/05 Data_to_CSV converted.png
 
 * Data extracted is first processed into **structured CSV format**.
 * Each record includes fields like `id`, `title`, `selftext`, `score`, `num_comments`, `created_utc`, etc.
@@ -67,7 +67,7 @@ The project uses:
 
 ### 🪣 Step 3 — Upload to Amazon S3 (Raw Zone)
 
-![alt text](./images/06%20s3.png)
+docs/screenshots/06 s3.png
 
 * Files are stored in the **Raw Layer** inside S3.
 * Separate buckets/folders are maintained for:
@@ -82,11 +82,11 @@ The project uses:
 
 ### ⚙️ Step 4 — Data Transformation
 
-![alt text](./images/08%20AWS%20Glue.png)
+docs/screenshots/08 AWS Glue.png
 
 * An AWS Glue job converts CSV to Parquet with Snappy compression.
 
-![alt text](./images/09%20transformed%20data.png)
+docs/screenshots/09 transformed data.png
 
 * The output is stored in the **transformed layer** on S3.
 * This improves **storage efficiency** and **query performance**.
@@ -95,7 +95,7 @@ The project uses:
 
 ### 🕸️ Step 5 — Metadata Management with Glue Crawler
 
-![alt text](./images/10%20Crawler.png)
+docs/screenshots/10 Crawler.png
 
 * Glue Crawler scans transformed S3 data.
 * Automatically creates a **schema** and registers it in **AWS Glue Data Catalog** under `reddit_db`.
@@ -107,7 +107,7 @@ The project uses:
 
 ### 🔍 Step 6 — Amazon Athena Query
 
-![alt text](./images/11%20data%20result.png)
+docs/screenshots/11 data result.png
 
 * Athena reads data directly from S3 using the Glue Data Catalog.
 * Example query:
@@ -124,7 +124,7 @@ The project uses:
 
 ### 🏢 Step 7 — Amazon Redshift Integration
 
-![alt text](./images/aws-redshift.png)
+docs/screenshots/aws-redshift.png
 
 * **Amazon Redshift Serverless** is configured.
 * External tables are mapped to S3 through the Glue Data Catalog.
@@ -134,7 +134,7 @@ The project uses:
 
 ### 📊 Step 8 — Query & Visualization in Redshift
 
-![alt text](./images/end%20redshift%20result.png)
+docs/screenshots/end redshift result.png
 
 * Query to analyze total scores per author:
 
@@ -146,9 +146,9 @@ The project uses:
   LIMIT 10;
   ```
 
-![alt text](./images/reddit_redshift_querry_editor%20\(1\).jpeg)
+docs/screenshots/reddit_redshift_querry_editor (1).jpeg
 
-![alt text](./images/reddit_redshift_querry_editor.jpeg)
+docs/screenshots/reddit_redshift_querry_editor.jpeg
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
