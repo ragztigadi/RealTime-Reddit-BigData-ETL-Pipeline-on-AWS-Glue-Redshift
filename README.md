@@ -135,9 +135,9 @@ docs/screenshots/System_Architecutre-1.png
   LIMIT 10;
   ```
 
-![alt text](<reddit_redshift_querry_editor (1).jpeg>)
+![alt text](<reddit_redshift_querry_editor (1)-1.jpeg>)
 
-![alt text](reddit_redshift_querry_editor.jpeg)
+![alt text](reddit_redshift_querry_editor-1.jpeg)
 
 * The result is visualized as **bar charts**, enabling quick insights.
 
