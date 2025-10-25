@@ -15,7 +15,7 @@ The project uses:
 
 ## 🏗️ 1. System Architecture
 
-docs/screenshots/System_Architecutre-1.png
+![alt text](System_Architecutre-1.png)
 
 **Key Components:**
 
@@ -34,12 +34,11 @@ docs/screenshots/System_Architecutre-1.png
 
 ### 🪄 Step 1 — Data Orchestration using Airflow
 
-![alt text](System_Architecutre-1.png)
+![alt text](<03 pipeline logs.png>)
 
 * A DAG named `etl_reddit_pipeline` triggers scheduled runs.
 * `PythonOperator` extracts Reddit posts through API.
 
-![alt text](<03 pipeline logs.png>)
 
 * Logs confirm successful execution of extraction and staging.
 
