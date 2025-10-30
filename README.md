@@ -227,19 +227,9 @@ The project uses:
 * 📊 Athena & Redshift for analytics
 * 🔐 Secure IAM roles and policies
 * 📈 BI-ready dashboards
-
 ---
 
-## 🌱 9. Future Enhancements
-
-* ⏩ Implement streaming ingestion with Apache Kafka or Kinesis
-* 🧮 Integrate machine learning models on transformed data
-* ☁️ Add CI/CD pipeline for infra deployment using Terraform
-* 📊 Real-time dashboards with Power BI / QuickSight
-
----
-
-## 👨‍💻 10. Author
+## 👨‍💻 09. Author
 
 **Raghav**
 📍 Data Engineer | Cloud & Big Data Enthusiast
