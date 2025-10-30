@@ -101,11 +101,11 @@ The project uses:
 * Athena reads data directly from S3 using the Glue Data Catalog.
 * Example query:
 
-  ```sql
+ sql
   SELECT * 
   FROM "AwsDataCatalog"."reddit_db"."transformed_data"
   LIMIT 10;
-````
+
 
 * Validates the data pipeline output.
 
@@ -127,13 +127,12 @@ The project uses:
 
 * Query to analyze total scores per author:
 
-  ```sql
+  sql
   SELECT author, SUM(score) AS total_score
   FROM "awsdatacatalog"."reddit_db"."transformed_data"
   GROUP BY author
   ORDER BY total_score DESC
   LIMIT 10;
-  ```
 
 ![alt text](<13 reddit_redshift_querry_edit.jpeg>)
 
@@ -209,9 +208,9 @@ The project uses:
 
 1. **Start Airflow**
 
-   ```bash
+   bash
    docker-compose up -d
-   ```
+   
 2. **Trigger the DAG** from Airflow UI.
 3. **View output** in S3, Athena, and Redshift.
 
