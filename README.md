@@ -114,7 +114,8 @@ The project uses:
 
 ### 🏢 Step 7 — Amazon Redshift Integration
 
-![alt text](<end redshift result-1.png>)
+<img width="1920" height="800" alt="aws-redshift" src="https://github.com/user-attachments/assets/8547c085-0706-4de2-8b23-b0f8d3c4397e" />
+
 
 * **Amazon Redshift Serverless** is configured.
 * External tables are mapped to S3 through the Glue Data Catalog.
