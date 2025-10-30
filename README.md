@@ -96,7 +96,8 @@ The project uses:
 
 ### 🔍 Step 6 — Amazon Athena Query
 
-![alt text](<11 data result.png>)
+<img width="1920" height="817" alt="11 data result" src="https://github.com/user-attachments/assets/4ce71ae0-c6ea-4574-b91a-793f623646ca" />
+
 
 * Athena reads data directly from S3 using the Glue Data Catalog.
 * Example query:
